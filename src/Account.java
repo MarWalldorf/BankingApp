@@ -18,6 +18,15 @@ public class Account {
         System.out.println("Deposit is Successful, new Balance is" +this.Balance);
     }
 
+    public void WithDraw(double WithdrawalMoney) {
+        if(this.Balance - WithdrawalMoney < 0) {
+            System.out.println("WithDraw Unsuccessful only" + this.Balance+" is left");
+        } else {
+            this.Balance-=WithdrawalMoney;
+            System.out.println("WithDraw Successful, Current Balance is"+this.Balance);
+        }
+    }
+
     public String getNumber() {
         return Number;
     }
