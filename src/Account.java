@@ -5,8 +5,12 @@ public class Account {
     private String Email;
     private String PhoneNumber;
 
-    public Account(String Number, double balance, String Name, String Email, String PhoneNumber) {
-
+    public Account(String Number, double Balance, String Name, String Email, String PhoneNumber) {
+        this.Number = Number;
+        this.Balance = Balance;
+        this.Name = Name;
+        this.Email = Email;
+        this.PhoneNumber = PhoneNumber;
     }
     public String getNumber() {
         return Number;
