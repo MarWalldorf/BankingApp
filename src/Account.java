@@ -12,6 +12,12 @@ public class Account {
         this.Email = Email;
         this.PhoneNumber = PhoneNumber;
     }
+
+    public void DepositMoney(double DepositedMoney) {
+        this.Balance+=DepositedMoney;
+        System.out.println("Deposit is Successful, new Balance is" +this.Balance);
+    }
+
     public String getNumber() {
         return Number;
     }
