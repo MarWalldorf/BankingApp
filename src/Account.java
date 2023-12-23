@@ -15,15 +15,15 @@ public class Account {
 
     public void DepositMoney(double DepositedMoney) {
         this.Balance+=DepositedMoney;
-        System.out.println("Deposit is Successful, new Balance is" +this.Balance);
+        System.out.println("Deposit is Successful, new Balance is " +this.Balance);
     }
 
-    public void WithDraw(double WithdrawalMoney) {
+    public void WithDrawMoney(double WithdrawalMoney) {
         if(this.Balance - WithdrawalMoney < 0) {
-            System.out.println("WithDraw Unsuccessful only" + this.Balance+" is left");
+            System.out.println("WithDraw Unsuccessful only " + this.Balance+" is left");
         } else {
             this.Balance-=WithdrawalMoney;
-            System.out.println("WithDraw Successful, Current Balance is"+this.Balance);
+            System.out.println("WithDraw Successful, Current Balance is "+this.Balance);
         }
     }
 
