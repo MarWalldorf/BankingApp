@@ -5,7 +5,9 @@ public class Account {
     private String Email;
     private String PhoneNumber;
 
+    public Account(String Number, double balance, String Name, String Email, String PhoneNumber) {
 
+    }
     public String getNumber() {
         return Number;
     }
